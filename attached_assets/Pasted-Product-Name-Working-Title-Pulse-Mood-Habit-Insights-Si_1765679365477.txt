@@ -1,0 +1,280 @@
+Product Name (Working Title):
+
+Pulse — Mood & Habit Insights, Simplified
+
+1. Problem Statement
+
+Many people want to improve their mental well-being and daily habits but feel overwhelmed by complex tracking apps that require too much effort, data entry, or interpretation. Existing mood and habit trackers often fail because they demand high consistency, offer generic advice, or present insights that feel disconnected from daily life.
+
+There is an opportunity to build a lightweight, low-friction app that helps users quickly log their mood and habits, then surface simple patterns and actionable suggestions that feel achievable and personal.
+
+2. Product Vision
+
+Create a calm, intuitive app that helps users understand how their habits influence their mood — without guilt, pressure, or cognitive overload.
+
+The app should feel like:
+
+A gentle daily check-in
+
+A mirror, not a judge
+
+A nudge toward small improvements, not life overhauls
+
+3. Goals & Success Metrics
+Primary Goals
+
+Encourage consistent daily check-ins
+
+Help users recognize patterns between mood and habits
+
+Drive small, sustainable behavior changes
+
+Success Metrics (Prototype / Early Stage)
+
+Day 7 retention ≥ 30%
+
+Daily check-in completion rate ≥ 60%
+
+Users viewing insights at least 3x per week
+
+At least 1 suggested action engaged with per week per active user
+
+4. Target Users
+Primary Persona:
+
+Busy, self-aware individuals (18–40) who want to feel better day-to-day but don’t want another overwhelming self-improvement app.
+
+Characteristics:
+
+Uses their phone frequently
+
+Interested in mental health and productivity
+
+Often starts habit trackers but doesn’t stick with them
+
+Prefers simple, visual feedback over long explanations
+
+5. Core User Journey (V1)
+
+User installs app
+
+Onboarding explains:
+
+Quick daily mood check
+
+Habit tracking
+
+Gentle insights
+
+Daily flow:
+
+Rate mood (takes <5 seconds)
+
+Log habits (tap-based)
+
+Over time:
+
+App shows simple patterns
+
+App suggests small, actionable steps
+
+User reflects and adjusts habits gradually
+
+6. Functional Requirements
+6.1 Daily Mood Rating
+
+Description:
+Users log their mood once per day using a simple scale.
+
+Requirements:
+
+Mood scale: 1–5 (Very Low → Very Good)
+
+Optional emoji or color-based indicator
+
+Optional short note (max 140 characters)
+
+One mood entry per calendar day
+
+Default reminder notification (configurable)
+
+Non-Goals (V1):
+
+Long mood journaling
+
+Multiple mood entries per day
+
+6.2 Habit Tracking
+
+Tracked Habits (V1):
+
+Sleep
+
+Exercise
+
+Screen time
+
+Requirements:
+
+Habits are logged daily
+
+Input types:
+
+Sleep: hours (slider or +/- buttons)
+
+Exercise: Yes/No or duration
+
+Screen time: manual estimate (low / medium / high or hours)
+
+Habits are optional; user can skip without penalty
+
+Ability to edit entries for the same day
+
+Non-Goals (V1):
+
+Custom habits
+
+Automatic device integrations
+
+6.3 Insights & Pattern Detection
+
+Description:
+The app surfaces simple correlations between mood and habits over time.
+
+Requirements:
+
+Weekly and monthly views
+
+Basic pattern logic, e.g.:
+
+“You tend to feel better on days you sleep more than 7 hours”
+
+“Low-mood days often follow high screen time”
+
+Insights must be:
+
+Short (1–2 sentences)
+
+Non-judgmental
+
+Clearly tied to user data
+
+Constraints:
+
+Patterns require minimum data threshold (e.g., 7 days)
+
+Avoid over-precision or medical claims
+
+6.4 Actionable Suggestions
+
+Description:
+Based on detected patterns, the app suggests small next steps.
+
+Examples:
+
+“Try going to bed 30 minutes earlier tonight.”
+
+“A 10-minute walk could help reset your mood.”
+
+“Consider a screen-free 30 minutes before bed.”
+
+Requirements:
+
+Suggestions are:
+
+Optional
+
+Small and achievable
+
+One suggestion shown at a time
+
+Users can:
+
+Mark suggestion as tried
+
+Dismiss suggestion
+
+Suggestions rotate based on recent behavior
+
+Non-Goals (V1):
+
+Personalized coaching plans
+
+Long-term goal setting
+
+7. Non-Functional Requirements
+Performance
+
+App loads main screen in <2 seconds
+
+Mood logging flow <10 seconds total
+
+Privacy & Trust
+
+No social sharing by default
+
+Clear messaging that data is private
+
+No mental health diagnoses or claims
+
+Accessibility
+
+High-contrast colors
+
+Simple language
+
+Tap-friendly UI
+
+8. Out of Scope (Explicit)
+
+Therapy or medical guidance
+
+AI chat or conversational coaching
+
+Wearable integrations
+
+Social features or comparisons
+
+Gamification (streaks, points, leaderboards)
+
+9. MVP / Prototype Scope
+
+Must Have:
+
+Daily mood rating
+
+Habit tracking for sleep, exercise, screen time
+
+Basic insights
+
+Simple suggestions
+
+Local data storage or basic backend
+
+Nice to Have (Post-Prototype):
+
+Data export
+
+Custom reminders
+
+Light theming
+
+10. Risks & Mitigations
+Risk	Mitigation
+Users forget to log	Gentle, configurable reminders
+App feels judgmental	Carefully written copy and tone
+Low engagement with insights	Keep insights short and visual
+Over-complexity	Strict scope control
+11. Open Questions (For Future Iteration)
+
+Should habits be fully customizable?
+
+How much explanation do users want behind insights?
+
+What tone resonates best: clinical vs conversational?
+
+When should suggestions be shown (morning vs evening)?
+
+12. Summary
+
+This prototype focuses on clarity, consistency, and calmness. The goal is not to fix users’ lives, but to help them notice patterns and make small, meaningful changes over time. By keeping interactions short and insights human-readable, the app aims to become a daily companion rather than another abandoned tracker.
